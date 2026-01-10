@@ -1,0 +1,20 @@
+import os
+
+def create_folders(base_path: str, structure: list[tuple[int, str]]):
+    """
+    Create nested folders based on a structure of (depth, name) tuples.
+
+    Args:
+        base_path (str): The root directory where folders will be created.
+        structure (list[tuple[int, str]]): List of (depth, folder_name) tuples.
+    """
+    stack = []
+
+    for depth, name in structure:
+        # Adjust the stack to the current depth
+        stack = stack[:depth]
+        stack.append(name)
+
+        # Build the full path for the current folder and create it
+        folder_path = os.path.join(base_path, *stack)
+        os.makedirs(folder_path, exist_ok=True)

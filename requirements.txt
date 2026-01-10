@@ -1,0 +1,38 @@
+# ================================================================
+# FOLDERTREE.PARSER - DEPENDENCIES
+# ================================================================
+
+# Core dependencies
+colorama>=0.4.6
+
+# ================================================================
+# SYSTEM REQUIREMENTS
+# ================================================================
+
+# 1. Python 3.9 or higher
+#    Download from: https://www.python.org/downloads/
+#    IMPORTANT: Check "Add Python to PATH" during installation!
+
+# 2. Supported OS:
+#    - Windows 10 / 11
+#    - Linux (tested)
+#    - macOS (not tested)
+
+# ================================================================
+# INSTALLATION
+# ================================================================
+
+# Method 1 (recommended):
+#   install.bat
+
+# Method 2 (manual):
+#   pip install -r requirements.txt
+
+# ================================================================
+# USAGE
+# ================================================================
+
+# Run:
+#   RUN.bat
+# or:
+#   python src/main.py
