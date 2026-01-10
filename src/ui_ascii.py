@@ -6,20 +6,55 @@ init(autoreset=True)
 
 TEMPLATE_DIR = "templates"
 
+
+# ------------------------------------------------------------
+# Color helpers (green terminal style)
+# ------------------------------------------------------------
+
+GREEN = Fore.GREEN
+BRIGHT = Style.BRIGHT
+RESET = Style.RESET_ALL
+
+
+def info(text):
+    print(f"{GREEN}[INFO]{RESET} {text}")
+
+
+def ok(text):
+    print(f"{GREEN}[OK]{RESET} {text}")
+
+
+def error(text):
+    print(f"{GREEN}[ERROR]{RESET} {text}")
+
+
+def line():
+    print(GREEN + "-" * 60 + RESET)
+
+
+# ------------------------------------------------------------
+# UI
+# ------------------------------------------------------------
+
 def banner():
-    """Print the program banner with color."""
-    print(Fore.CYAN + "=" * 60)
-    print(Fore.CYAN + "   Folder Tree Parser")
-    print(Fore.CYAN + "   Scan folders → Export structure")
-    print(Fore.CYAN + "=" * 60)
+    """Print the program banner."""
+    line()
+    print(BRIGHT + GREEN + "FOLDER TREE PARSER v2.0" + RESET)
+    print(GREEN + "Scan folders -> Export structure" + RESET)
+    line()
+    print(GREEN + "by Pavel Zosim ( ´◔ ω◔`) ノシ | pavelzosim.com | tools & tutorials" + RESET)
+
+
 
 def ask_path():
     """Prompt for a folder path to scan."""
-    return input("📁 Enter folder path to scan:\n> ").strip()
+    return input("\nEnter folder path to scan:\n> ").strip()
+
 
 def ask_include_files():
     """Ask if file names should be included in the scan."""
-    return input("Include file names? (y/n): ").lower().startswith("y")
+    return input("\nInclude file names? (y/n): ").lower().startswith("y")
+
 
 def ask_output_format():
     """Prompt for output format selection."""
@@ -35,60 +70,45 @@ def ask_output_format():
         "3": "txt"
     }.get(choice, "json")
 
+
 def ask_path_safe():
     """Prompt for a valid folder path, with retry and exit options."""
     while True:
-        raw = input("\n[INFO] Enter folder path to scan:\n> ").strip()
+        raw = input("\nEnter folder path to scan:\n> ").strip()
         path = normalize_path(raw)
 
         if os.path.isdir(path):
             return path
 
-        print("\n[ERROR] Path does not exist:")
+        error("Path does not exist:")
         print(path)
         print("\n1) Enter path again")
-        print("2) Exit")
-
-        choice = input("> ").strip()
-        if choice == "2":
-            return None
-
-def ask_continue():
-    """Ask if the user wants to process another folder or exit."""
-    print("\n1) Parse another folder")
-    print("2) Exit")
-    choice = input("> ").strip()
-    return choice == "1"
-
-def ask_template_file():
-    """Prompt for a .fst template file path, with validation and retry."""
-    while True:
-        raw = input("\n[INFO] Enter .fst template file path:\n> ").strip()
-        path = normalize_path(raw)
-
-        if os.path.isfile(path) and path.lower().endswith(".fst"):
-            return path
-
-        print("\n[ERROR] Invalid .fst file.")
-        print("1) Try again")
         print("2) Exit")
 
         if input("> ").strip() == "2":
             return None
 
+
+def ask_continue():
+    """Ask if the user wants to process another folder or exit."""
+    print("\n1) Parse another folder")
+    print("2) Exit")
+    return input("> ").strip() == "1"
+
+
 def ask_template_from_list():
-    """Prompt user to select a .fst template from the templates directory."""
+    """Prompt user to select a template from the templates directory."""
     if not os.path.isdir(TEMPLATE_DIR):
-        print(f"[ERROR] Templates folder not found: {TEMPLATE_DIR}")
+        error(f"Templates folder not found: {TEMPLATE_DIR}")
         return None
 
     files = sorted(
         f for f in os.listdir(TEMPLATE_DIR)
-        if f.lower().endswith(".fst")
+        if f.lower().endswith((".fst", ".txt"))
     )
 
     if not files:
-        print("[ERROR] No .fst templates found.")
+        error("No templates found.")
         return None
 
     print("\nAvailable templates:")
@@ -99,6 +119,7 @@ def ask_template_from_list():
 
     while True:
         choice = input("> ").strip()
+
         if choice == "0":
             return None
 
@@ -107,4 +128,18 @@ def ask_template_from_list():
             if 0 <= idx < len(files):
                 return os.path.join(TEMPLATE_DIR, files[idx])
 
-        print("[!] Invalid selection. Try again.")
+        error("Invalid selection. Try again.")
+
+
+def ask_next_action():
+    """
+    Ask the user what to do next after completing an action.
+    Returns:
+        str: "1" for main menu, "2" to repeat, "3" to exit.
+    """
+    print("\nWhat next?")
+    print("1) Back to main menu")
+    print("2) Repeat this action")
+    print("3) Exit")
+    choice = input("> ").strip()
+    return choice

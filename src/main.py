@@ -3,7 +3,7 @@
     ask_path_safe,
     ask_include_files,
     ask_output_format,
-    ask_continue,
+    ask_next_action,
     ask_template_from_list,
 )
 from scanner import scan_folder
@@ -90,16 +90,26 @@ def main():
         mode = ask_mode()
 
         if mode == "1":
-            run_parse_mode()
+            action = run_parse_mode
         elif mode == "2":
-            run_template_mode()
+            action = run_template_mode
         else:
             print("\n[INFO] Exiting program.")
             return
 
-        if not ask_continue():
-            print("\n[INFO] Program finished.")
-            return
+        # Run selected mode once
+        action()
+
+        while True:
+            next_action = ask_next_action()
+
+            if next_action == "1":
+                break  # back to main menu
+            elif next_action == "2":
+                action()  # repeat same mode
+            else:
+                print("\n[INFO] Program finished.")
+                return
 
 if __name__ == "__main__":
     main()

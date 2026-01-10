@@ -3,43 +3,24 @@
   "WorkspaceRootPath": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\audio_to_txt\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\utils.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\menu.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\menu.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\folder_creator.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\folder_creator.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\screen.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\screen.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\cursor.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui\\cursor.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui_ascii.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ui_ascii.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\template_parser.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\template_parser.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\scanner.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\scanner.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\install.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:install.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Scripts\\Python-Tools\\directory_structre_parser\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,132 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\audio_to_txt\\README.md",
-              "RelativeDocumentMoniker": "..\\audio_to_txt\\README.md",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\audio_to_txt\\README.md",
-              "RelativeToolTip": "..\\audio_to_txt\\README.md",
-              "ViewState": "AgIAALcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-01-10T14:18:05.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "scanner.py",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\scanner.py",
-              "RelativeDocumentMoniker": "src\\scanner.py",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\scanner.py",
-              "RelativeToolTip": "src\\scanner.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "menu.py",
+              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\menu.py",
+              "RelativeDocumentMoniker": "src\\ui\\menu.py",
+              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\menu.py",
+              "RelativeToolTip": "src\\ui\\menu.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAVAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T14:13:00.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "folder_creator.py",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\folder_creator.py",
-              "RelativeDocumentMoniker": "src\\folder_creator.py",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\folder_creator.py",
-              "RelativeToolTip": "src\\folder_creator.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T13:54:37.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "template_parser.py",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\template_parser.py",
-              "RelativeDocumentMoniker": "src\\template_parser.py",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\template_parser.py",
-              "RelativeToolTip": "src\\template_parser.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T13:54:28.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ui_ascii.py",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui_ascii.py",
-              "RelativeDocumentMoniker": "src\\ui_ascii.py",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui_ascii.py",
-              "RelativeToolTip": "src\\ui_ascii.py",
-              "ViewState": "AgIAACkAAAAAAAAAAAAmwEsAAAAmAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T13:39:03.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "utils.py",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\utils.py",
-              "RelativeDocumentMoniker": "src\\utils.py",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\utils.py",
-              "RelativeToolTip": "src\\utils.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T13:38:38.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAANIAAAAAAAAAAAAAAN4AAACXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-01-10T13:27:11.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "install.bat",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\install.bat",
-              "RelativeDocumentMoniker": "install.bat",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\install.bat",
-              "RelativeToolTip": "install.bat",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVDhPvZJNSwJRGIWfmcaQiH6DEdEHFBEFBe6KoKKoTf8iAlOmgdbipqBf0rKICAuDkj4WERgulL5o06gLx9S53lZJzrVQgh54uXDOuefdvPAXpJReqW00y4xkQAa8RmtoWb2dz4tLKw0vyACWGZaVSkWZ48SVPDpLKvr3scyw1BtWAPfpLIenl9i5PO92jv2DODd3KW\u002BsjlJg6DqOU2JidIjJsWGckoNhKLE6iuMKQbVaQdQENSFwq1VcV3hjdZSCcrmMBsTPk5wkLtA0SF7f4pQ\u002BvFFoVjA\u002BMsja8hw93V0IV/D69sLj8xOx3T1SD2lvXC34YnVhlvmZIIV8gei2Sd628fs7vbGfCwCKRQdDh/VQBJ\u002Bvo\u002Bnl/low0N/HVmiD4PQUO7EovQH15jTL3MyApjotIbNe5f/5BEiOoURWS5r0AAAAAElFTkSuQmCC",
-              "WhenOpened": "2026-01-10T13:32:53.422Z",
+              "WhenOpened": "2026-01-10T15:57:24.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "screen.py",
+              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\screen.py",
+              "RelativeDocumentMoniker": "src\\ui\\screen.py",
+              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\screen.py",
+              "RelativeToolTip": "src\\ui\\screen.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-01-10T15:57:20.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cursor.py",
+              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\cursor.py",
+              "RelativeDocumentMoniker": "src\\ui\\cursor.py",
+              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui\\cursor.py",
+              "RelativeToolTip": "src\\ui\\cursor.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-01-10T15:57:14.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "main.py",
               "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\main.py",
               "RelativeDocumentMoniker": "src\\main.py",
               "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\main.py",
               "RelativeToolTip": "src\\main.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAWwBEAAAASAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2026-01-10T13:26:53.173Z",
+              "WhenOpened": "2026-01-10T15:43:57.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "requirements.txt",
-              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\requirements.txt",
-              "RelativeDocumentMoniker": "requirements.txt",
-              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\requirements.txt",
-              "RelativeToolTip": "requirements.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-10T13:28:25.709Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "ui_ascii.py",
+              "DocumentMoniker": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui_ascii.py",
+              "RelativeDocumentMoniker": "src\\ui_ascii.py",
+              "ToolTip": "E:\\Scripts\\Python-Tools\\directory_structre_parser\\src\\ui_ascii.py",
+              "RelativeToolTip": "src\\ui_ascii.py",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-01-10T15:41:30.262Z"
             }
           ]
         }
