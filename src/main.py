@@ -2,6 +2,7 @@
     banner,
     ask_path_safe,
     ask_include_files,
+    ask_include_subfolders,
     ask_output_format,
     ask_next_action,
     ask_template_from_list,
@@ -32,6 +33,7 @@ def run_parse_mode():
         return
 
     include_files = ask_include_files()
+    include_subfolders = ask_include_subfolders()
     output_format = ask_output_format()
 
     root_name = os.path.basename(root_path.rstrip("\\/"))
@@ -39,7 +41,7 @@ def run_parse_mode():
     print(root_path)
     print(f"[INFO] Root folder name: {root_name}")
 
-    tree = scan_folder(root_path, include_files)
+    tree = scan_folder(root_path, include_files, include_subfolders)
 
     safe_root = make_safe_filename(root_name)
     date_stamp = get_date_stamp()

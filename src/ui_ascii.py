@@ -56,6 +56,11 @@ def ask_include_files():
     return input("\nInclude file names? (y/n): ").lower().startswith("y")
 
 
+def ask_include_subfolders():
+    """Ask if nested subfolders should be scanned (recursive)."""
+    return input("\nInclude ALL nested subfolders? (y/n) [Default: n]: ").lower().startswith("y")
+
+
 def ask_output_format():
     """Prompt for output format selection."""
     print("\nSelect output format:")

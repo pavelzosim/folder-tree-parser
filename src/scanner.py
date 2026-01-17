@@ -1,6 +1,12 @@
 import os
 
-def scan_folder(root_path: str, include_files: bool):
+def scan_folder(root_path: str, include_files: bool, include_subfolders: bool = False):
+    """
+    Scan folder tree.
+
+    If include_subfolders is False, only the root and its immediate child folders are listed
+    (no recursive traversal into subfolders). If True, walk the tree recursively (original behavior).
+    """
     tree = {}
 
     for root, dirs, files in os.walk(root_path):
@@ -10,6 +16,20 @@ def scan_folder(root_path: str, include_files: bool):
         if rel_path != ".":
             for part in rel_path.split(os.sep):
                 node = node.setdefault(part, {})
+
+        # If we are at the root and not recursing, create entries for immediate subfolders
+        # then prevent os.walk from descending further.
+        if rel_path == "." and not include_subfolders:
+            # create entries for immediate child folders
+            for d in dirs:
+                node.setdefault(d, {})
+            # include files at the root if requested
+            if include_files:
+                node["_files"] = files
+            # prevent further traversal into subfolders
+            dirs[:] = []
+            # os.walk will not yield deeper entries after dirs[:] = []
+            continue
 
         if include_files:
             node["_files"] = files
