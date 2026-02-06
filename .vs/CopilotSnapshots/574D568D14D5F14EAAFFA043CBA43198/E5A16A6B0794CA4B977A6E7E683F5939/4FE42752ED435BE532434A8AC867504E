@@ -1,0 +1,87 @@
+﻿"""
+Settings module for persistent configuration.
+
+Saves and loads user preferences to a JSON file.
+"""
+
+import json
+import os
+from semantic_config import SemanticConfig
+
+SETTINGS_FILE = "settings.json"
+
+# Default settings structure
+DEFAULT_SETTINGS = {
+    "semantic": {
+        "min_token_freq": 2,
+        "min_token_weight": 2.0,
+        "include_extensions": True,
+        "exclude_numbers": True,
+        "path_format": "absolute",
+        "output_mode": "content",
+        "max_lines_per_file": 1000,
+    }
+}
+
+
+def load_settings() -> dict:
+    """Load settings from file or return defaults."""
+    if os.path.exists(SETTINGS_FILE):
+        try:
+            with open(SETTINGS_FILE, "r", encoding="utf-8") as f:
+                saved = json.load(f)
+                # Merge with defaults (in case new settings were added)
+                merged = DEFAULT_SETTINGS.copy()
+                for section, values in saved.items():
+                    if section in merged:
+                        merged[section].update(values)
+                    else:
+                        merged[section] = values
+                return merged
+        except (json.JSONDecodeError, IOError):
+            pass
+    return DEFAULT_SETTINGS.copy()
+
+
+def save_settings(settings: dict) -> bool:
+    """Save settings to file.
+    
+    Returns:
+        True if saved successfully, False otherwise.
+    """
+    try:
+        with open(SETTINGS_FILE, "w", encoding="utf-8") as f:
+            json.dump(settings, f, indent=2, ensure_ascii=False)
+        return True
+    except IOError:
+        return False
+
+
+def get_semantic_config() -> SemanticConfig:
+    """Get SemanticConfig from saved settings."""
+    settings = load_settings()
+    semantic = settings.get("semantic", {})
+    return SemanticConfig(**semantic)
+
+
+def update_semantic_settings(updates: dict) -> bool:
+    """Update semantic settings with new values.
+    
+    Args:
+        updates: Dict of setting key -> value to update
+        
+    Returns:
+        True if saved successfully.
+    """
+    settings = load_settings()
+    settings["semantic"].update(updates)
+    return save_settings(settings)
+
+
+def reset_settings() -> bool:
+    """Reset all settings to defaults.
+    
+    Returns:
+        True if saved successfully.
+    """
+    return save_settings(DEFAULT_SETTINGS.copy())

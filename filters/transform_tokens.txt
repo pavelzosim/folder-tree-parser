@@ -1,0 +1,33 @@
+# Token transformation rules
+# Format: original = replacement
+# One rule per line, lowercase
+# Lines starting with # are comments
+
+# Programming languages normalization
+c = csharp
+cs = csharp
+cpp = c++
+cxx = c++
+hpp = c++
+hlsl = shader
+glsl = shader
+frag = shader
+vert = shader
+
+# Common abbreviations
+intro = introduction
+chap = chapter
+pt = part
+vol = volume
+
+# Technology normalization
+js = javascript
+ts = typescript
+py = python
+rb = ruby
+rs = rust
+
+# Format normalization
+jpeg = jpg
+tiff = tif
+mpeg = mpg

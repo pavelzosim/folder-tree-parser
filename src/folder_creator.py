@@ -1,20 +1,25 @@
-import os
+"""
+Folder creator module.
 
-def create_folders(base_path: str, structure: list[tuple[int, str]]):
+Creates directory structures from parsed template data.
+"""
+
+import os
+from typing import List, Tuple
+
+
+def create_folders(base_path: str, structure: List[Tuple[int, str]]) -> None:
     """
-    Create nested folders based on a structure of (depth, name) tuples.
+    Create nested folders from a structure definition.
 
     Args:
-        base_path (str): The root directory where folders will be created.
-        structure (list[tuple[int, str]]): List of (depth, folder_name) tuples.
+        base_path: Root directory where folders will be created.
+        structure: List of (depth, folder_name) tuples from template parser.
     """
-    stack = []
+    stack: List[str] = []
 
     for depth, name in structure:
-        # Adjust the stack to the current depth
         stack = stack[:depth]
         stack.append(name)
-
-        # Build the full path for the current folder and create it
         folder_path = os.path.join(base_path, *stack)
         os.makedirs(folder_path, exist_ok=True)

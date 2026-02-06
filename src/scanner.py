@@ -1,13 +1,30 @@
+"""
+Folder scanner module.
+
+Recursively or shallowly scans directory structures into a nested dict.
+"""
+
 import os
+from typing import Dict, Any
 
-def scan_folder(root_path: str, include_files: bool, include_subfolders: bool = False):
-    """
-    Scan folder tree.
 
-    If include_subfolders is False, only the root and its immediate child folders are listed
-    (no recursive traversal into subfolders). If True, walk the tree recursively (original behavior).
+def scan_folder(
+    root_path: str,
+    include_files: bool,
+    include_subfolders: bool = False
+) -> Dict[str, Any]:
     """
-    tree = {}
+    Scan a folder into a nested dictionary structure.
+
+    Args:
+        root_path: Path to the root directory to scan.
+        include_files: If True, include file names under "_files" key.
+        include_subfolders: If True, scan recursively. If False, only immediate children.
+
+    Returns:
+        Nested dict representing the folder structure.
+    """
+    tree: Dict[str, Any] = {}
 
     for root, dirs, files in os.walk(root_path):
         rel_path = os.path.relpath(root, root_path)
@@ -17,18 +34,13 @@ def scan_folder(root_path: str, include_files: bool, include_subfolders: bool = 
             for part in rel_path.split(os.sep):
                 node = node.setdefault(part, {})
 
-        # If we are at the root and not recursing, create entries for immediate subfolders
-        # then prevent os.walk from descending further.
+        # Shallow scan: only root level
         if rel_path == "." and not include_subfolders:
-            # create entries for immediate child folders
             for d in dirs:
                 node.setdefault(d, {})
-            # include files at the root if requested
             if include_files:
                 node["_files"] = files
-            # prevent further traversal into subfolders
-            dirs[:] = []
-            # os.walk will not yield deeper entries after dirs[:] = []
+            dirs[:] = []  # Prevent deeper traversal
             continue
 
         if include_files:

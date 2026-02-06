@@ -1,0 +1,81 @@
+﻿import json
+import csv
+import os
+
+def export_json(data, output_path):
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+def export_txt(data, output_path, indent=0):
+    with open(output_path, "w", encoding="utf-8") as f:
+        _write_txt(data, f, indent)
+
+def _write_txt(data, file, indent):
+    for key, value in data.items():
+        file.write("  " * indent + f"- {key}\n")
+        if isinstance(value, dict):
+            _write_txt(value, file, indent + 1)
+
+def export_csv(data, output_path):
+    rows = []
+
+    def walk(node, path=""):
+        for key, value in node.items():
+            current = f"{path}/{key}" if path else key
+            rows.append([current])
+            if isinstance(value, dict):
+                walk(value, current)
+
+    walk(data)
+
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Path"])
+        writer.writerows(rows)
+
+
+# ------------------------------------------------------------
+# Semantic analysis exporters
+# ------------------------------------------------------------
+
+def export_semantic_json(results, output_path):
+    """Export semantic analysis results to JSON with full stats."""
+    data = []
+    for r in results:
+        stats_dict = {}
+        for token, stats in r.token_stats.items():
+            stats_dict[token] = {
+                "count": stats.count,
+                "weight": stats.weight,
+                "sources": list(stats.sources)
+            }
+        data.append({
+            "file_path": r.file_path,
+            "tags": r.tags,
+            "token_stats": stats_dict
+        })
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def export_semantic_csv(results, output_path):
+    """Export semantic analysis results to CSV (tags only)."""
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["File", "Tags"])
+        for r in results:
+            writer.writerow([r.file_path, "; ".join(r.tags)])
+
+
+def export_semantic_txt(results, output_path):
+    """Export semantic analysis results to human-readable TXT."""
+    with open(output_path, "w", encoding="utf-8") as f:
+        for r in results:
+            f.write(f"File: {r.file_path}\n")
+            f.write(f"Tags: {', '.join(r.tags) if r.tags else '(none)'}\n")
+            f.write("Token stats:\n")
+            for token, stats in sorted(r.token_stats.items(), key=lambda x: x[1].weight, reverse=True):
+                sources_str = ', '.join(stats.sources)
+                f.write(f"  {token}: count={stats.count}, weight={stats.weight}, sources=[{sources_str}]\n")
+            f.write("\n" + "-" * 60 + "\n\n")

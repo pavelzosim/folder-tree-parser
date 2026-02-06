@@ -1,0 +1,63 @@
+﻿"""
+Template parser module.
+
+Parses .fst template files into folder structure definitions.
+"""
+
+from typing import List, Tuple
+
+
+def parse_fst(file_path: str) -> List[Tuple[int, str]]:
+    """
+    Parse a .fst template file into folder structure.
+
+    Supports indentation with tabs or 2-space multiples (not mixed).
+    Ignores empty lines and comments (lines starting with #).
+
+    Args:
+        file_path: Path to the template file.
+
+    Returns:
+        List of (depth, folder_name) tuples.
+
+    Raises:
+        ValueError: If template format is invalid.
+    """
+    structure: List[Tuple[int, str]] = []
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line_num, raw_line in enumerate(f, start=1):
+            line = raw_line.rstrip("\n")
+
+            if not line.strip():
+                continue
+
+            if line.lstrip().startswith("#"):
+                continue
+
+            leading = len(line) - len(line.lstrip(" \t"))
+            prefix = line[:leading]
+
+            if "\t" in prefix and " " in prefix:
+                raise ValueError(f"Mixed tabs and spaces at line {line_num}.")
+
+            if "\t" in prefix:
+                depth = prefix.count("\t")
+            else:
+                if leading % 2 != 0:
+                    raise ValueError(
+                        f"Invalid space indentation at line {line_num}. "
+                        "Use multiples of 2 spaces."
+                    )
+                depth = leading // 2
+
+            name = line.strip()
+            structure.append((depth, name))
+
+    if not structure:
+        raise ValueError("Template file contains no folders.")
+
+    if structure[0][0] != 0:
+        raise ValueError("First folder must have no indentation.")
+
+    return structure

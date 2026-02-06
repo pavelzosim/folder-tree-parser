@@ -16,6 +16,19 @@ templates/*
 !templates/.gitkeep
 
 # ----------------------------------------
+# Filters (keep defaults, ignore user customizations)
+# ----------------------------------------
+!filters/
+filters/*
+!filters/ignore_tokens.txt
+!filters/transform_tokens.txt
+
+# ----------------------------------------
+# User settings (local preferences)
+# ----------------------------------------
+settings.json
+
+# ----------------------------------------
 # Temporary / runtime files
 # ----------------------------------------
 config_temp.py

@@ -1,0 +1,72 @@
+﻿# ========================================
+# FolderTree.Parser — .gitignore
+# ========================================
+
+# ----------------------------------------
+# Generated output (never commit results)
+# ----------------------------------------
+output/*
+!output/.gitkeep
+
+# ----------------------------------------
+# Templates (keep examples, ignore user ones)
+# ----------------------------------------
+templates/*
+!templates/example.fst
+!templates/.gitkeep
+
+# ----------------------------------------
+# Filters (keep defaults, ignore user customizations)
+# ----------------------------------------
+!filters/
+filters/*
+!filters/ignore_tokens.txt
+!filters/transform_tokens.txt
+
+# ----------------------------------------
+# User settings (local preferences)
+# ----------------------------------------
+settings.json
+
+# ----------------------------------------
+# Temporary / runtime files
+# ----------------------------------------
+config_temp.py
+*.log
+*.tmp
+
+# ----------------------------------------
+# Python cache
+# ----------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ----------------------------------------
+# Virtual environments (optional)
+# ----------------------------------------
+.venv/
+venv/
+env/
+
+# ----------------------------------------
+# OS / Editor junk
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------------
+# IDE / Editor configs (optional)
+# ----------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# ----------------------------------------
+# Safety: ignore accidental archives
+# ----------------------------------------
+*.zip
+*.rar
+*.7z
