@@ -1,4 +1,4 @@
-"""
+﻿"""
 Settings module.
 
 Persistent storage for user preferences via JSON file.
@@ -64,13 +64,7 @@ def get_semantic_config() -> SemanticConfig:
     """Get SemanticConfig instance from saved settings."""
     settings = load_settings()
     semantic = settings.get("semantic", {})
-
-    # Filter out deprecated keys not in SemanticConfig
-    valid_keys = {"min_token_freq", "min_token_weight", "include_extensions", 
-                  "exclude_numbers", "max_lines_per_file"}
-    filtered = {k: v for k, v in semantic.items() if k in valid_keys}
-
-    return SemanticConfig(**filtered)
+    return SemanticConfig(**semantic)
 
 
 def update_semantic_settings(updates: Dict[str, Any]) -> bool:

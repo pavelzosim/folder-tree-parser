@@ -182,7 +182,9 @@ def run_settings_mode():
         "2": "min_token_weight",
         "3": "include_extensions",
         "4": "exclude_numbers",
-        "5": "max_lines_per_file",
+        "5": "path_format",
+        "6": "output_mode",
+        "7": "max_lines_per_file",
     }
 
     while True:
@@ -193,7 +195,7 @@ def run_settings_mode():
 
         if choice == "0":
             return
-        elif choice == "6":
+        elif choice == "8":
             if reset_settings():
                 print("\n[OK] Settings reset to defaults.")
             else:

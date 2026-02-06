@@ -1,4 +1,4 @@
-"""
+﻿"""
 Configuration for semantic analyzer.
 
 Adjustable parameters for tag extraction sensitivity and export options.

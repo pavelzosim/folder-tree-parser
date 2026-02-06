@@ -1,4 +1,4 @@
-"""
+﻿"""
 Settings module.
 
 Persistent storage for user preferences via JSON file.

@@ -1,4 +1,4 @@
-import json
+﻿import json
 import csv
 import os
 from typing import List, Optional, TYPE_CHECKING
@@ -111,17 +111,17 @@ def export_semantic_txt(results, output_path, corpus_stats=None):
 def export_semantic_obsidian(results, output_path, config=None, root_path=None):
     """Export semantic analysis results to Obsidian-compatible Markdown.
 
-    Format (obsidian_links):
-        *<absolute_file_path>
-        Open: [Folder](file:///...) [File](file:///...)
-        Tags: #tag1 #tag2 ...
-        ---
+    Supports:
+    - content mode: [[path]] with #tags
+    - yaml mode: YAML frontmatter with tags array
+    - path_format: absolute or relative paths
+    - file splitting: if file exceeds max_lines_per_file
 
     Args:
         results: List of FileTagResult
         output_path: Output file path
-        config: SemanticConfig for max_lines_per_file setting
-        root_path: Unused (kept for API compatibility)
+        config: SemanticConfig for export options
+        root_path: Root path for relative path calculation
     """
     from semantic_config import DEFAULT_CONFIG
 
@@ -131,26 +131,56 @@ def export_semantic_obsidian(results, output_path, config=None, root_path=None):
     # Generate all lines first
     lines = []
     for r in results:
-        # Always use absolute path
-        abs_path = r.file_path
-        folder_path = os.path.dirname(abs_path)
+        # Determine path format
+        file_path = r.file_path
+        if config.path_format == "relative" and root_path:
+            try:
+                file_path = os.path.relpath(r.file_path, root_path)
+            except ValueError:
+                pass  # Keep absolute if relpath fails (different drives)
 
-        # URL-encode paths for file:/// links (replace backslashes with forward slashes)
-        file_url = "file:///" + quote(abs_path.replace("\\", "/"), safe="/:")
-        folder_url = "file:///" + quote(folder_path.replace("\\", "/") + "/", safe="/:")
-
-        # Tags sorted by weight (already sorted in r.tags)
+        # Tags - extensions without dot (e.g., "pdf" -> "#pdf")
         tag_names = [token for token, _ in r.tags]
-        tags_str = " ".join(f"#{token}" for token in tag_names) if tag_names else ""
 
-        lines.append(f"*{abs_path}  ")
-        lines.append(f"* Open: [Folder]({folder_url})  [File]({file_url})  ")
-        if tags_str:
-            lines.append(f"* Tags: {tags_str}")
+        if config.output_mode == "yaml":
+            # YAML frontmatter format
+            lines.append("---")
+            lines.append(f"file: \"{file_path}\"")
+            if tag_names:
+                lines.append("tags:")
+                for tag in tag_names:
+                    lines.append(f"  - {tag}")
+            lines.append("---")
+            lines.append("")
+        elif config.output_mode == "obsidian_links":
+            # Obsidian file:/// links format
+            # Always use absolute path (ignore path_format setting)
+            abs_path = r.file_path
+            folder_path = os.path.dirname(abs_path)
+
+            # URL-encode paths for file:/// links (replace backslashes with forward slashes)
+            file_url = "file:///" + quote(abs_path.replace("\\", "/"), safe="/:")
+            folder_url = "file:///" + quote(folder_path.replace("\\", "/") + "/", safe="/:")
+
+            # Tags sorted by weight (already sorted in r.tags)
+            tags_str = " ".join(f"#{token}" for token in tag_names) if tag_names else ""
+
+            lines.append(f"*{abs_path}*  ")
+            lines.append(f"Open: [Folder]({folder_url})  [File]({file_url})  ")
+            if tags_str:
+                lines.append(f"Tags: {tags_str}")
+            else:
+                lines.append("Tags:")
+            lines.append("")
+            lines.append("---")
+            lines.append("")
         else:
-            lines.append("Tags:")
-        lines.append("---")
-        lines.append("")
+            # Content mode (default)
+            lines.append(f"[[{file_path}]]")
+            if tag_names:
+                tags_str = " ".join(f"#{token}" for token in tag_names)
+                lines.append(tags_str)
+            lines.append("")
 
     # Check if splitting is needed
     max_lines = config.max_lines_per_file

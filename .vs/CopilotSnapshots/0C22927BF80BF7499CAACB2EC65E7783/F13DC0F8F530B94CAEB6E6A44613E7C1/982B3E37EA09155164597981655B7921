@@ -251,9 +251,11 @@ def show_settings_menu(current_settings: dict) -> str:
     print(f"2) Min tag weight:              {s.get('min_token_weight', 2.0)}")
     print(f"3) Include extensions:          {'Yes' if s.get('include_extensions', True) else 'No'}")
     print(f"4) Exclude numbers:             {'Yes' if s.get('exclude_numbers', True) else 'No'}")
-    print(f"5) Max lines per file:          {s.get('max_lines_per_file', 1000)}")
+    print(f"5) Path format (Obsidian):      {s.get('path_format', 'absolute')}")
+    print(f"6) Output mode (Obsidian):      {s.get('output_mode', 'content')}")
+    print(f"7) Max lines per file:          {s.get('max_lines_per_file', 1000)}")
     print("-" * 50)
-    print("6) Reset to defaults")
+    print("8) Reset to defaults")
     print("0) Back to main menu")
     print("-" * 50)
 
@@ -298,6 +300,26 @@ def edit_setting(key: str, current_value) -> tuple:
         val = input("Exclude numeric-only tokens? (y/n): ").strip().lower()
         if val in ("y", "n"):
             return val == "y", True
+
+    elif key == "path_format":
+        print(f"\nCurrent: {current_value}")
+        print("1) absolute")
+        print("2) relative")
+        val = input("> ").strip()
+        if val == "1":
+            return "absolute", True
+        elif val == "2":
+            return "relative", True
+
+    elif key == "output_mode":
+        print(f"\nCurrent: {current_value}")
+        print("1) content (markdown)")
+        print("2) yaml (frontmatter)")
+        val = input("> ").strip()
+        if val == "1":
+            return "content", True
+        elif val == "2":
+            return "yaml", True
 
     elif key == "max_lines_per_file":
         print(f"\nCurrent: {current_value}")
