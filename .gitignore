@@ -60,6 +60,7 @@ desktop.ini
 # ----------------------------------------
 # IDE / Editor configs (optional)
 # ----------------------------------------
+.vs/
 .vscode/
 .idea/
 *.swp
